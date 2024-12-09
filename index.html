@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML course, Learn HTML online, HTML for beginners, Web development course, HTML tutorials, HTML coding lessons, Beginner HTML tutorial, Free HTML course, HTML training, HTML coding for beginners, Learn web design, Front-end development course, HTML classes, Web development tutorials, HTML5 course, HTML and CSS course, Build websites with HTML, Online HTML course, HTML course with exercises,  Interactive HTML lessons">
+  <meta name="description" content="Learn HTML with our comprehensive course. Master web development skills from scratch with step-by-step tutorials, practical exercises, and real-world projects. Perfect for beginners and aspiring developers. Start your journey today!">
+  <meta name="robots" content="index, follow">
+  <meta name="image" content="/images.png">
+  <title>Introduction to HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+    pre {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 1rem;
+      overflow-x: auto;
+    }
+    .example {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Introduction to HTML (Hypertext Markup Language)</h1>
+</header>
+
+<section>
+  <h2>1. What is HTML?</h2>
+  <p>HTML is a markup language used to describe the structure of a webpage. Unlike programming languages, HTML doesn't define behavior or logic—it focuses on defining how content should be arranged and displayed in a web browser.</p>
+  <p>HTML uses <code>tags</code> to "mark up" text, images, and other content for display. Tags are used to wrap content and give it meaning (such as a header, a paragraph, or an image).</p>
+  <p>An HTML document is essentially a file (with the .html or .htm extension) that contains the content of a webpage, structured using HTML tags.</p>
+</section>
+
+<section>
+  <h2>2. Basic Structure of an HTML Document</h2>
+  <p>An HTML document follows a specific structure that helps browsers understand how to display the content. Here's the basic structure of an HTML document:</p>
+  <pre>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage</title>
+      </head>
+      <body>
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a paragraph of text on the webpage.</p>
+      </body>
+    </html>
+  </pre>
+</section>
+
+<section>
+  <h2>3. HTML Elements</h2>
+  <p>HTML is composed of elements (also called tags). Elements are the building blocks of HTML and can be used to create content such as text, images, links, forms, and multimedia.</p>
+  <p>Most HTML elements are enclosed in opening and closing tags. For example, <code>&lt;h1&gt;</code> is the opening tag, and <code>&lt;/h1&gt;</code> is the closing tag. The content goes between these tags.</p>
+  <div class="example">
+    <p><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+  </div>
+</section>
+
+<section>
+  <h2>4. Common HTML Tags</h2>
+  <h3>Text Tags:</h3>
+  <ul>
+    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings of different levels (h1 is the largest, and h6 is the smallest).</li>
+    <li><code>&lt;p&gt;</code>: Paragraphs of text.</li>
+    <li><code>&lt;a&gt;</code>: Links to other pages or resources (with the href attribute).</li>
+    <li><code>&lt;strong&gt;</code>: Bold text.</li>
+    <li><code>&lt;em&gt;</code>: Italic text.</li>
+  </ul>
+  <h3>Image Tag:</h3>
+  <div class="example">
+    <p><code>&lt;img src="logo.png" alt="Logo"&gt;</code></p>
+  </div>
+  <h3>List Tags:</h3>
+  <ul>
+    <li><code>&lt;ul&gt;</code>: Unordered (bulleted) list.</li>
+    <li><code>&lt;ol&gt;</code>: Ordered (numbered) list.</li>
+    <li><code>&lt;li&gt;</code>: List item.</li>
+  </ul>
+  <h3>Table Tags:</h3>
+  <div class="example">
+    <pre>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Header 1&lt;/th&gt;
+          &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Data 1&lt;/td&gt;
+          &lt;td&gt;Data 2&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+  </div>
+  <h3>Form Tags:</h3>
+  <div class="example">
+    <pre>
+      &lt;form&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username"&gt;
+      &lt;/form&gt;
+    </pre>
+  </div>
+</section>
+
+<section>
+  <h2>5. HTML Attributes</h2>
+  <p>HTML elements can have attributes that provide additional information about an element. Attributes are always specified in the opening tag.</p>
+  <div class="example">
+    <pre>
+      &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+      &lt;img src="image.jpg" alt="An image description"&gt;
+    </pre>
+  </div>
+</section>
+
+<section>
+  <h2>6. Nesting and Structure</h2>
+  <p>HTML elements can be nested within other elements. This helps structure the content of the page logically.</p>
+  <div class="example">
+    <pre>
+      &lt;div&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;This is an article paragraph.&lt;/p&gt;
+      &lt;/div&gt;
+    </pre>
+  </div>
+</section>
+
+<section>
+  <h2>7. HTML5 Features</h2>
+  <p>HTML5, the latest version of HTML, introduced several new features to improve web development, including:</p>
+  <ul>
+    <li>Semantic Elements: Tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> make the page structure more meaningful and accessible.</li>
+    <li>Audio and Video: <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements allow embedding media without relying on plugins like Flash.</li>
+    <li>Form Elements: HTML5 introduced new input types like email, date, and range for improved user interaction.</li>
+  </ul>
+  <div class="example">
+    <pre>
+      &lt;video controls&gt;
+        &lt;source src="movie.mp4" type="video/mp4"&gt;
+        Your browser does not support the video tag.
+      &lt;/video&gt;
+    </pre>
+  </div>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>HTML is the fundamental language for building web pages. It provides the structure and organizes content using tags. While HTML defines the content and structure, CSS is used for styling, and JavaScript adds interactivity. Understanding HTML is essential for anyone who wants to become a web developer, as it's the first step in creating anything on the web.</p>
+</section>
+
+</body>
+</html>
